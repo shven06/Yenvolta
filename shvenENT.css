@@ -1,0 +1,217 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+.bg-wall {
+  height: 100%;
+  overflow-x: hidden;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/355/931/588/energy-atom-particle-hd-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+header {
+  background: black;
+  height: 10%;
+  display: flex;
+  justify-content: center; 
+  position: fixed;  
+  z-index: 9;   
+  width: 100%; 
+  margin-bottom: 50px;
+  opacity: 100%;
+  box-shadow: 1px 2px 80px rgba(125, 124, 124, 0.726);
+}
+.headng-animation {
+  flex: 2;
+  font-size: 200%;
+  font-weight: 600;
+  font-family: merriwheather ;
+  background-image: url("https://www.burohappold.com/wp-content/uploads/2020/11/ocean-texture_bg_adobe-stock-1024x683.jpg");
+  background-repeat: repeat;
+  object-position:50% 50% ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  white-space: nowrap;
+  padding: 16px 5px 0px 5px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  animation-name: texpic;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-iteration-count:6;
+  margin-left: 2%;
+}
+@keyframes texpic {
+  0% {
+      background-position: top;
+  }
+  30% {
+      background-position:right;
+  }
+  60% {
+      background-position:left;
+  }
+  90% {
+      background-position:bottom;
+  }
+  100% {
+      background-position: top;
+  }
+}
+.ham-icon {
+  display: none;
+  margin-right: 4%;
+  opacity: 88%;
+}
+@media (max-width:440px) {
+  .ham-icon {
+      display: block;
+      margin: 0;
+      height: 26px;
+      padding-top: 32px;
+
+  }
+  .list {
+    font-family: audiowide;
+  }
+  .headng-animation {
+    font-size: 1.8em;
+    margin-left: 3%;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  nav {
+      flex-direction: column;
+      position: fixed;
+      top: 0px;
+      right: -90%;
+      transition: right 0.3s;
+  }
+  button {
+    width: 120%;
+    padding: 5px;
+    margin-top: 1px;
+    font-size: 3rem;
+    text-align: left;
+  }
+}
+.ham-btn {
+  background: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding-top:8%;
+}
+.ham-btn:active {
+cursor: grabbing;
+}
+.menu-btns {
+  background-color: black;
+  color: rgb(215, 225, 232);
+  right: 10%;
+  border: none;
+  padding: 5px;
+  font-size: 2rem;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 10;
+}
+.menu-close-btn {
+  background-color: black;
+  color:white;
+  right: 10px;
+  border: none;
+  padding: 5px;
+  font-size: 2rem;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 10;
+}
+.menu-btns:hover {
+  background-color: rgb(49, 49, 49);
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(0, 76, 255);
+}
+nav {
+  display: flex;
+  flex: 1;
+}
+nav.show {
+  right: 1%;
+  top: 2px;
+}
+
+.gallery {
+  margin-top: 100px;
+  columns: 2 100px;
+  column-gap: 15px;
+  row-gap: 20px;
+
+}
+.server{
+  width: 150px;
+}
+.missile {
+  opacity: 40%;
+}
+.gallery img {
+  opacity: 80%;
+  border-radius: 10pxpx;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+.detailed {
+ font-family: quantico;
+ font-size: 1.8em;
+ font-weight:700 ;
+ color: rgb(204, 231, 231);
+ position: absolute;
+ top: 100px;
+ z-index: 8;
+ text-align: center;
+}
+p {
+  font-size: 1.6em;
+  font-family:roboto ;
+  font-family: 700;
+  color: white;
+  margin-top: 100px;
+  line-height: 40px;
+  
+}
+.SE {
+  font-family: audiowide;
+  font-size: 1.9em;
+  color: aliceblue;
+}
+.ceobox {
+  height: 300px;
+  width: 90vw;
+  position: relative;
+}
+.ceobox img {
+  object-fit: cover;
+}
+.ceo {
+  font-family: audiowide;
+  font-size: 1.9em;
+  color: hsl(217, 100%, 47%);
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
